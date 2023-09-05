@@ -22,9 +22,9 @@ class DrawerV1Widget extends StatelessWidget {
           // -- widget_page --
           ListTile(
               leading: const Icon(Icons.calculate_rounded),
-              title: const Text('Page 1'),
+              title: const Text('Container 1'),
               onTap: () {
-                Navigator.popAndPushNamed(context, '/page1');
+                Navigator.popAndPushNamed(context, '/container1');
                 // Navigator.pop(context);
               }),
           ListTile(

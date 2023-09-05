@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'core/ui/theme/app_theme.dart';
 import 'core/utls/app_routes.dart';
 import 'pages/home/home_page.dart';
+import 'widgets/container_widget.dart';
 
 class MyApp extends StatefulWidget {
   final String title;
@@ -26,12 +27,13 @@ class _MyAppState extends State<MyApp> {
       initialRoute: AppRoutes.home,
       routes: {
         AppRoutes.home: (ctx) => HomePageApp(title: widget.title),
+        '/container1': (ctx) => const ContainerWidget(),
       },
 
       onGenerateRoute: (settings) {
         if (settings.name == '/alguma-coisa') {
           return null;
-        } else if (settings.name == '/outra-coisa') {
+        } else if (settings.name == '/outra-coisa') { 
           return null;
         } else {
           return MaterialPageRoute(builder: (_) {
