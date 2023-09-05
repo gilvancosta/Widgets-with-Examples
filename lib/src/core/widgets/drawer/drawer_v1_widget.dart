@@ -24,21 +24,21 @@ class DrawerV1Widget extends StatelessWidget {
               leading: const Icon(Icons.calculate_rounded),
               title: const Text('Container 1'),
               onTap: () {
-                Navigator.popAndPushNamed(context, '/container1');
+                Navigator.popAndPushNamed(context, '/container1-widget');
                 // Navigator.pop(context);
               }),
           ListTile(
               leading: const Icon(Icons.calculate_rounded),
-              title: const Text('Page 2'),
+              title: const Text('Images'),
               onTap: () {
-                Navigator.popAndPushNamed(context, '/page2');
+                Navigator.popAndPushNamed(context, '/images-widget');
                 // Navigator.pop(context);
               }),
           ListTile(
               leading: const Icon(Icons.calculate_rounded),
-              title: const Text('Page 3'),
+              title: const Text('Fontes'),
               onTap: () {
-                Navigator.popAndPushNamed(context, '/page3');
+                Navigator.popAndPushNamed(context, '/fontes-page');
                 // Navigator.pop(context);
               }),
           ListTile(

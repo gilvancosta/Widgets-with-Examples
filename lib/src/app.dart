@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'core/ui/theme/app_theme.dart';
 import 'core/utls/app_routes.dart';
 import 'pages/home/home_page.dart';
-import 'widgets/container_widget.dart';
+import 'widgets_top1/container_widget.dart';
+import 'widgets_top1/fontes_page.dart';
+import 'widgets_top1/images_widget.dart';
 
 class MyApp extends StatefulWidget {
   final String title;
@@ -27,7 +29,9 @@ class _MyAppState extends State<MyApp> {
       initialRoute: AppRoutes.home,
       routes: {
         AppRoutes.home: (ctx) => HomePageApp(title: widget.title),
-        '/container1': (ctx) => const ContainerWidget(),
+        '/container1-widget': (ctx) => const ContainerWidget(),
+        '/images-widget': (ctx) => const ImagesWidget(),
+        '/fontes-page': (ctx) => const FontsPage(),
       },
 
       onGenerateRoute: (settings) {
