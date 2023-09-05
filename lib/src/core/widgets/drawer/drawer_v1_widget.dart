@@ -43,12 +43,75 @@ class DrawerV1Widget extends StatelessWidget {
               }),
           ListTile(
               leading: const Icon(Icons.calculate_rounded),
-              title: const Text('Page 4'),
+              title: const Text('Popup Menu Button'),
               onTap: () {
-                Navigator.popAndPushNamed(context, '/page4');
+                Navigator.popAndPushNamed(context, '/popupmenubutton');
                 // Navigator.pop(context);
               }),
           // -- images_page --
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Rows Columns'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/rows_columns');
+                // Navigator.pop(context);
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Media Query'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/mediaquery');
+                // Navigator.pop(context);
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Device Preview'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/device_preview');
+                // Navigator.pop(context);
+              }),
+          // -- images_page --
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Layout builder'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/layoutbuilder');
+                // Navigator.pop(context);
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Botoes'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/botoes');
+                // Navigator.pop(context);
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Listview '),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/listview');
+                // Navigator.pop(context);
+              }),
+          // -- images_page --
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Dialogs'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/dialogs');
+                // Navigator.pop(context);
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.calculate_rounded),
+              title: const Text('Plataforma'),
+              onTap: () {
+                Navigator.popAndPushNamed(context, '/plataforma');
+                // Navigator.pop(context);
+              }),
         ],
       ),
     );
