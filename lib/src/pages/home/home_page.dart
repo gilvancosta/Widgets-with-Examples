@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/widgets/PopupMenuButton/popupmenubutton_widget_v1.dart';
 import '../../core/widgets/drawer/drawer_v1_widget.dart';
 
 class HomePageApp extends StatefulWidget {
@@ -26,6 +27,9 @@ class _TabsScreenState extends State<HomePageApp> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: const [
+          PopupMenuButtonWidgetV1(),
+        ],
       ),
       drawer: const DrawerV1Widget(),
       body: Center(

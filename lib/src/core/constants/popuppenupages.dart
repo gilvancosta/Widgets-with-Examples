@@ -1,0 +1,18 @@
+enum PopupMenuPages {
+  container,
+  rowsColumns,
+  layoutBuilder,
+  buttonText,
+  scrollViewsPage,
+  listViewPage,
+  dialogsPage,
+  snackbarPage,
+  plataformaPage,
+  themePage,
+  formPage,
+  jsonCidadesPage,
+  stackPage1,
+  stackPage2,
+  bottomNavegatorBarPage,
+  cicrleAvatarPage,
+}
