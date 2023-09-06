@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:device_preview/device_preview.dart';
 import 'package:example_widgets/src/widgets_top1/banner_widget.dart';
 import 'package:example_widgets/src/widgets_top1/botoes_widget.dart';
 import 'package:example_widgets/src/widgets_top1/bottomnavigatorbar_widget.dart';
@@ -46,46 +47,42 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'My APP',
       theme: MyAppTheme.themeData,
+      // DevicePreview
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+
       initialRoute: AppRoutes.home,
       routes: {
         AppRoutes.home: (ctx) => HomePageApp(title: widget.title),
         '/container1-widget': (ctx) => const ContainerWidget(),
         '/images-widget': (ctx) => const ImagesWidget(),
         '/fontes-page': (ctx) => const FontsPage(),
-
         '/popupmenubutton': (ctx) => const PopupmenubuttonWidget(),
         '/rows_columns': (ctx) => const RowsColumnsWidget(),
         '/mediaquery': (ctx) => const MediaqueryWidget(),
-
         '/device_preview': (ctx) => const DevicePreviewWidget(),
         '/layoutbuilder': (ctx) => const LayoutbuilderWidget(),
         '/botoes': (ctx) => const BotoesWidget(),
-
         '/listview': (ctx) => const ListviewWidget(),
         '/dialogs': (ctx) => const DialogsWidget(),
         '/plataforma': (ctx) => const PlataformaWidget(),
-
         '/buildcontext': (ctx) => const BuildContextWidget(),
         '/theme': (ctx) => const ThemeWidget(),
         '/snackbar': (ctx) => const SnackbarWidget(),
-
         '/formularios': (ctx) => const FormulariosWidget(),
         '/lendo_arquivo_json': (ctx) => const LendoArquivoJsonWidget(),
         '/stack1': (ctx) => const Stack1Widget(),
-
         '/stack2': (ctx) => const Stack2Widget(),
         '/bottomnavigatorbar': (ctx) => const BottomNavigatorBarWidget(),
         '/circleavatar': (ctx) => const CircleAvatarWidget(),
-        
         '/cores': (ctx) => const CoresWidget(),
         '/banner': (ctx) => const BannerWidget(),
-
       },
 
       onGenerateRoute: (settings) {
         if (settings.name == '/alguma-coisa') {
           return null;
-        } else if (settings.name == '/outra-coisa') { 
+        } else if (settings.name == '/outra-coisa') {
           return null;
         } else {
           return MaterialPageRoute(builder: (_) {
