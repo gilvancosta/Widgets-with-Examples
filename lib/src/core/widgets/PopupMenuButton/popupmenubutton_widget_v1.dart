@@ -23,7 +23,10 @@ class PopupMenuButtonWidgetV1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PopupMenuButton<PopupMenuPages>(onSelected: (PopupMenuPages valueSelected) {
+    return PopupMenuButton<PopupMenuPages>(
+        // initialValue: PopupMenuPages.plataformaWidget,
+        // icon: const Icon(Icons.restaurant_menu),
+        onSelected: (PopupMenuPages valueSelected) {
       switch (valueSelected) {
         case PopupMenuPages.plataformaWidget:
           Navigator.pushNamed(context, '/plataforma');
@@ -77,7 +80,7 @@ class PopupMenuButtonWidgetV1 extends StatelessWidget {
         const PopupMenuItem<PopupMenuPages>(value: PopupMenuPages.bottomNavigatorBarWidget, child: Text('Bottom NavigatorBar')),
         const PopupMenuItem<PopupMenuPages>(value: PopupMenuPages.circleAvatarWidget, child: Text('Circle Avatar')),
         const PopupMenuItem<PopupMenuPages>(value: PopupMenuPages.coresWidget, child: Text('Cores')),
-        const PopupMenuItem<PopupMenuPages>(value: PopupMenuPages.bannerWidget, child: Text('Banner')),
+        const PopupMenuItem<PopupMenuPages>(value: PopupMenuPages.bannerWidget, child: Text('Banner Widget')),
       ];
     });
   }
