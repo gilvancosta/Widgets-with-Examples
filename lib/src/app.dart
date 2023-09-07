@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
         '/rows_columns': (ctx) => const RowsColumnsWidget(),
         '/mediaquery': (ctx) => const MediaqueryWidget(),
         '/device_preview': (ctx) => const DevicePreviewWidget(),
-        '/layoutbuilder': (ctx) => const LayoutbuilderWidget(),
+        '/layoutbuilder': (ctx) => const LayoutBuilderWidget(),
         '/botoes': (ctx) => const BotoesWidget(),
         '/listview': (ctx) => const ListviewWidget(),
         '/dialogs': (ctx) => const DialogsWidget(),

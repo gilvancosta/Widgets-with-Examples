@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class MediaqueryWidget extends StatelessWidget {
-  const MediaqueryWidget({super.key});
 
-  @override
-  Widget build(BuildContext context) {
+  const MediaqueryWidget({ super.key });
+
+   @override
+   Widget build(BuildContext context) {
+
     final mediaQuery = MediaQuery.of(context);
     final heightBody = mediaQuery.size.height - mediaQuery.padding.top - mediaQuery.padding.bottom - kToolbarHeight;
 
