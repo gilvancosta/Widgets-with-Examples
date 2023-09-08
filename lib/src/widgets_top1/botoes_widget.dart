@@ -37,19 +37,12 @@ class BotoesWidget extends StatelessWidget {
                               },
                             );
                           },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.red,
-                            shadowColor: Colors.brown,
-
-                            minimumSize: const Size(200, 40), //////// HERE
-                          ),
+                          style: ElevatedButton.styleFrom(backgroundColor: Colors.red, shadowColor: Colors.brown, minimumSize: const Size(200, 40)),
                           child: const Text("ElevatedButton"),
                         ),
                         ElevatedButton.icon(
                           onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            minimumSize: const Size(200, 40), //////// HERE
-                          ),
+                          style: ElevatedButton.styleFrom(minimumSize: const Size(200, 40)),
                           icon: const Icon(Icons.air, size: 18),
                           label: const Text("Modo Avião"),
                         ),
@@ -71,9 +64,15 @@ class BotoesWidget extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {},
-                          style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                          // style: ButtonStyle(foregroundColor: MaterialStateProperty.all<Color>(Colors.blue)),
+                          style: TextButton.styleFrom(
+                            backgroundColor: Colors.green,
+                            shadowColor: Colors.greenAccent,
+                            elevation: 3,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32.0)),
+                            minimumSize: const Size(200, 40), /// TAMANHO DO BOTÃO
                           ),
+
                           child: const Text("TextButton"),
                         ),
                         IconButton(
@@ -88,7 +87,7 @@ class BotoesWidget extends StatelessWidget {
                           backgroundColor: Colors.red[900],
                           child: const Icon(Icons.add),
                         ),
-                        ElevatedButton(onPressed: () => {}, child: const Text('Page 1')),
+                        const SizedBox(height: 10),
                         ElevatedButton(
                           onPressed: () => {},
                           style: ButtonStyle(
@@ -113,6 +112,7 @@ class BotoesWidget extends StatelessWidget {
                           ),
                           child: const Text('Page 2'),
                         ),
+                        const SizedBox(height: 10),
                         InkWell(
                           onTap: () {},
                           child: Container(
@@ -130,6 +130,7 @@ class BotoesWidget extends StatelessWidget {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 10),
                         GestureDetector(
                           // ignore: avoid_print
                           onTap: () => print('GestureDetector'),
@@ -148,6 +149,7 @@ class BotoesWidget extends StatelessWidget {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 10),
                         Container(
                           width: 200,
                           height: 40,
@@ -167,6 +169,7 @@ class BotoesWidget extends StatelessWidget {
                                 offset: Offset(1, 1),
                               ),
                             ],
+                        
                           ),
                           child: const Center(
                             child: Text(
