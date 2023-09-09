@@ -18,6 +18,7 @@ class DialogsWidget extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {
                   showDialog(
+                      barrierDismissible: false,
                       context: context,
                       builder: (context) {
                         return Dialog01Widget(context: context);
