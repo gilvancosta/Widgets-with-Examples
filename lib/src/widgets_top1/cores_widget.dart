@@ -5,10 +5,10 @@ class CoresWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const cor = Colors.red;
     // const cor = Color.fromRGBO(255, 0, 0, 0.5);
-
     // final cor = Colors.red.withOpacity((0.5));
-    var cor = const Color(0XFF45D1FD); // HEXADECIMAL
+    // var cor = const Color(0XFF45D1FD); // HEXADECIMAL
 
     return Scaffold(
       appBar: AppBar(
