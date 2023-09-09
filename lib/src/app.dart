@@ -46,7 +46,27 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'My APP',
-      theme: MyAppTheme.themeData,
+      theme: ThemeData(
+        primaryColor: Colors.red,
+        primarySwatch: Colors.blue,
+        buttonTheme: const ButtonThemeData(
+          buttonColor: Colors.yellow,
+          textTheme: ButtonTextTheme.primary,
+        ),
+       // ButtonThemenão funcionará para novos botões como ElevatedButton. Para isso você deve definir elevatedButtonTheme.
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red, // Button color
+            foregroundColor: Colors.white, // Text color
+          ),
+        ),
+
+      fontFamily: 'Roboto',
+
+
+      ),
+
+      // theme: MyAppTheme.themeData,
       // DevicePreview
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
