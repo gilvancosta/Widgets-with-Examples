@@ -26,7 +26,7 @@ import 'pages/home/home_page.dart';
 import 'widgets_top1/container_widget.dart';
 import 'widgets_top1/fontes_page.dart';
 import 'widgets_top1/images_widget.dart';
-import 'widgets_top1/lendo_arquivo_json_widget.dart';
+import 'widgets_top1/json_file_widget.dart';
 import 'widgets_top1/snackbar_widget.dart';
 
 class MyApp extends StatefulWidget {
@@ -90,7 +90,7 @@ class _MyAppState extends State<MyApp> {
         '/theme': (ctx) => const ThemeWidget(),
         '/snackbar': (ctx) => const SnackbarWidget(),
         '/formularios': (ctx) => const FormulariosWidget(),
-        '/lendo_arquivo_json': (ctx) => const LendoArquivoJsonWidget(),
+        '/lendo_arquivo_json': (ctx) => const JsonFileWidget(),
         '/stack1': (ctx) => const Stack1Widget(),
         '/stack2': (ctx) => const Stack2Widget(),
         '/bottomnavigatorbar': (ctx) => const BottomNavigatorBarWidget(),
