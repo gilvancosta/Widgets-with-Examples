@@ -36,7 +36,7 @@ class _BottomNavigatorBarWidgetState extends State<BottomNavigatorBarWidget> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.business),
-              label: 'Business',
+              label: 'Busib',
               backgroundColor: Colors.green,
             ),
             BottomNavigationBarItem(
@@ -46,7 +46,7 @@ class _BottomNavigatorBarWidgetState extends State<BottomNavigatorBarWidget> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.settings),
-              label: 'Settings',
+              label: 'Sett',
               backgroundColor: Colors.pink,
             ),
           ],
@@ -54,6 +54,7 @@ class _BottomNavigatorBarWidgetState extends State<BottomNavigatorBarWidget> {
         body: IndexedStack(
           index: index,
           children: const <Widget>[
+   
             NavegatorBarPage1(),
             NavegatorBarPage2(),
             NavegatorBarPage3(),
